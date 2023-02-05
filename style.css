@@ -111,7 +111,8 @@ li {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-bottom: 1px solid #ddd;
-    height: 30px;    
+    height: 30px;
+    margin-top:5px;
     
 } 
 .trash{ 
