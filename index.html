@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nomad momentum</title>
+    <link rel="stylesheet" href="style.css">    
 </head>
-<body>
-    
+<body > 
+    <header>
+        <div class="weather">
+            <span id="weatherIcon" ></span>
+            <span id="weatherTemp">°C</span>
+        </div>
+        <div class="login">
+            <form  method="post" id="loginForm" class="hidden">
+                <input type="text"  placeholder="이름" focused required maxlength="15"/>            
+                <inpuT type="submit" value="Log In" class="loginBtn"/>
+            </form>
+        </div> 
+        <!-- <div>
+        <img src="icon/l.png" alt="">
+        <img src="icon/d.png" alt="">
+        </div> -->
+    </header>
+    <section class="welcomeContainer">
+        <div class="welcomeMsg"></div>
+        <div class="clock"></div> 
+    </section>
+    <section class="todoContainer ">   
+        <div class="todo">
+            <div class="todoForm">
+                <form method="post" id="todoForm">
+                    <input type="text" placeholder="할 일을 입력하세요" required maxlength="100"/>
+                    <input type="submit" value="Add" class="addBtn"/>
+                </form>
+            </div>
+            <div class="todoList"> 
+               <ul>
+                   <li>
+                    <span >Take out the trashTake ouvt the trashTake out the trashTake out the trashTake out the trashTake out the trash</span>
+                    <button> <img src="icon/trash.png" style="border:none"> </button>
+                   </li> 
+               </ul>
+           </div>
+        </div>   
+    </section>
+
+
+    <script src="js/login.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 </html>

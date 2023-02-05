@@ -1,0 +1,122 @@
+*{
+    padding:0;
+    margin:0; 
+    list-style: none;
+} 
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    padding:0;
+    margin:0px; /* */
+    font-family: 'Roboto', sans-serif;
+} 
+button {
+    border: none;
+}
+section{
+    display:block;
+    position: relative;
+}
+.hidden{
+    display:none;
+}
+.welcomeContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.clock{
+    font-size:7em;
+    color: #fff;    
+    text-shadow: 0 0 40px #000;  
+} 
+.welcomeMsg{
+    font-size:3em;
+    text-align: center;
+    color: #fff;    
+    text-shadow: 0 0 40px #000;  
+}
+.weather{
+    position: absolute;
+    display:none;
+    justify-self:center;
+    align-items:center;
+    top: 10px;
+    left: 10px;
+    font-size: 1em;
+    color: #fff; 
+    text-shadow: 0 0 20px #000; 
+} 
+ #weatherTemp{
+    font-size: 1.8em;
+    color: #fff; 
+    text-shadow: 0 0 20px #000; 
+}
+.login{
+    position: absolute; 
+    justify-self:center;
+    align-items:center;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    color: #fff; 
+    text-shadow: 0 0 20px #000; 
+} 
+input{
+    font-size: 1em;
+    color: gray;
+    background: rgba(255, 255, 255, 0.5);
+    border : 2px solid #DDDDDD;
+    height:30px;
+}
+input::placeholder { 
+    color: #DDDDDD;
+} 
+input:focus{
+  outline: none;
+  border: 2px solid #DDDDDD;
+  box-shadow: 0 0 10px #DDDDDD;
+}
+input[type="text"]{ 
+    background: transparent;
+}
+input[type="submit"]{ 
+    width: 100px;
+    height:34px;
+} 
+/* todo list */ 
+.todoContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.todoForm{
+    width:500px;
+    background-color: aqua;
+}
+.todoForm input[type="text"]{
+    width: 400px; 
+    height: 40px;
+}
+.todoForm input[type="submit"]{
+    width: 50px;   
+    height: 40px; 
+}
+ul{
+    margin-top:10px;
+}
+li {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    height: 30px;    
+    
+} 
+.trash{ 
+    display:inline-block;
+    cursor: pointer;    
+}
