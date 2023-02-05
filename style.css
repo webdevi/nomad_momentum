@@ -17,7 +17,6 @@ button {
 }
 section{
     display:block;
-    position: relative;
 }
 .hidden{
     display:none;
@@ -26,7 +25,7 @@ section{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);   
 }
 .clock{
     font-size:7em;
@@ -67,7 +66,7 @@ section{
 } 
 input{
     font-size: 1em;
-    color: gray;
+    color: #fff;
     background: rgba(255, 255, 255, 0.5);
     border : 2px solid #DDDDDD;
     height:30px;
@@ -89,21 +88,20 @@ input[type="submit"]{
 } 
 /* todo list */ 
 .todoContainer{
-    position: absolute;
+    position: relative;  
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);  
 }
-.todoForm{
-    width:500px;
-    background-color: aqua;
+.todo{
+    width:500px; 
 }
-.todoForm input[type="text"]{
+.todo input[type="text"]{
     width: 400px; 
     height: 40px;
 }
-.todoForm input[type="submit"]{
-    width: 50px;   
+.todo input[type="submit"]{
+    width: 90px;   
     height: 40px; 
 }
 ul{

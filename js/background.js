@@ -19,9 +19,7 @@ console.log();
 function randomBackground(){
     const randomNum = Math.ceil(Math.random() * bgImages.length-1);
     document.body.style.backgroundImage = `url(${bgImages[randomNum]})`;   
-  // $body.style.backgroundImage =-- `url(https://picsum.photos/1024/720)`;  
-    console.log('randomNum : ', randomNum );
-    
-  };
+   
+};
 
 randomBackground();
